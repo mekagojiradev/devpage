@@ -1,10 +1,19 @@
 let frequencySlider;
 
 function setup() {
-    const canvas = createCanvas(600, 400);
-    canvas.parent('canvas-container'); // Attach the canvas to the specified div
-    frequencySlider = select('#frequencySlider'); // Select the slider by its ID
+  let canvasContainer = document.getElementById('canvas-container');
+  if (canvasContainer) {
+    let cnv = createCanvas(600, 400);
+    cnv.parent(canvasContainer);  // Attach canvas to div with ID 'canvas-container'
+  } else {
+    console.error('Canvas container not found');
+  }
 }
+
+function draw() {
+  background(220);
+}
+
 
 function draw() {
     background(255);
