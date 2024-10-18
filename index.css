@@ -23,7 +23,7 @@ h1 {
 /* Styles for mobile devices */
 @media (max-width: 600px) {
     h1 {
-        font-size: 8vh; /* Adjust the font size for smaller screens */
+        font-size: 4vh; /* Adjust the font size for smaller screens */
     }
 
     input {
