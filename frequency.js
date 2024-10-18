@@ -2,13 +2,16 @@ let frequencySlider;
 
 function setup() {
     createCanvas(600, 400);
-    frequencySlider = createSlider(10, 100, 20); // Frequency slider (min, max, default) multiplied by 10
-    frequencySlider.position(10, 10);
+    frequencySlider = createSlider(10, 100, 20); // Frequency slider (min, max, default)
+    
+    // Position the slider relative to the canvas
+    frequencySlider.parent(select('main'));
+    //frequencySlider.position(width, height + 10); // Set y position below the canvas
     frequencySlider.style('width', '300px'); // Adjust the width of the slider if needed
 }
 
 function draw() {
-    background(255);
+    background(color('#222222'));
     let frequency = frequencySlider.value() / 10; // Divide by 10 to get decimal values (range from 1 to 10)
     stroke(0);
     strokeWeight(15);
