@@ -1,8 +1,8 @@
 let frequencySlider;
 
 function setup() {
-    createCanvas(600, 400);
-    frequencySlider = createSlider(10, 100, 20); // Frequency slider (min, max, default)
+    createCanvas(windowWidth * 0.8, 400);
+    frequencySlider = createSlider(10, 100, 10); // Frequency slider (min, max, default)
     
     // Position the slider relative to the canvas
     frequencySlider.parent(select('main'));
