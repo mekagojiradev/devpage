@@ -18,3 +18,15 @@ input {
 h1 {
     font-size: 12.5vh;
 }
+
+/* Styles for mobile devices */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 8vh; /* Adjust the font size for smaller screens */
+    }
+
+    input {
+        width: 90%; /* Make the input field take more width on mobile */
+    }
+
+}
