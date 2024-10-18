@@ -13,7 +13,6 @@ let input = [];
 document.addEventListener('keydown', (event) => {
     input.push(event.key);
 
-    console.log(event.key);
     // Check if the input matches the Konami code
     if (input.length > konamiCode.length) {
         input.shift(); // Remove the oldest entry to keep the array size manageable
@@ -21,6 +20,6 @@ document.addEventListener('keydown', (event) => {
 
     if (input.toString() === konamiCode.toString()) {
         // Replace the entire body with the image
-        document.body.innerHTML = '<img src="https://static.wikia.nocookie.net/multiversology/images/a/a1/Hyyyypperrrr_mazzzerrrr.gif/revision/latest?cb=20210223031515" alt="Secret Image" style="width:100%; height:auto;">';
+        document.body.innerHTML = '<img src="secret.gif" alt="Secret Image" style="width:100%; height:auto;">';
     }
 });
