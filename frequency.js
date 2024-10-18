@@ -11,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-    background(color('#222222'));
+    background(color('#777777'));
     let frequency = frequencySlider.value() / 10; // Divide by 10 to get decimal values (range from 1 to 10)
     stroke(0);
     strokeWeight(15);
